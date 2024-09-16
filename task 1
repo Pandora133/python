@@ -1,0 +1,17 @@
+integer_var = 444
+float_var = 432.344
+string_var = "Пандора"
+list_var = [2, 4, 8, 8]
+tuple_var = ("Окунь", 2, 4, "Карп")
+dict_var = {1: "Форель", 2: "Окунь"}
+set_var = {9, 4, 5, 0}
+bool_var = True
+
+print(integer_var)
+print(float_var)
+print(string_var)
+print(list_var)
+print(tuple_var)
+print(dict_var)
+print(set_var)
+print(bool_var)
