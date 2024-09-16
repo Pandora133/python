@@ -16,4 +16,13 @@ print(tuple_var)
 print(dict_var)
 print(set_var)
 print(bool_var)
+
 # 2
+name = "Григорий"
+age = 17
+average_grade = 4.7 
+favorite_movies = ["Достать ножи", "Властелин колец", "Интерстеллар"]
+personal_info = ("Пандора", "Каит20", 4.7)
+skills = {trategists: 10, luck: 6}
+visited_countries = {"Испания", "Турция"}
+has_driver_license = False
