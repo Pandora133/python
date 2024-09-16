@@ -26,3 +26,9 @@ personal_info = ("Пандора", "Каит20", 4.7)
 skills = {trategists: 10, luck: 6}
 visited_countries = {"Испания", "Турция"}
 has_driver_license = False
+
+#3
+proc = "intel i7"
+ram = 16
+inter_speed = 82.39
+home_pc = ["intel i7", 16, 82.39]
