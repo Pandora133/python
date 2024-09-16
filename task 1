@@ -1,3 +1,4 @@
+# 1
 integer_var = 444
 float_var = 432.344
 string_var = "Пандора"
@@ -15,3 +16,4 @@ print(tuple_var)
 print(dict_var)
 print(set_var)
 print(bool_var)
+# 2
