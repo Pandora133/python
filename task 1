@@ -32,3 +32,4 @@ proc = "intel i7"
 ram = 16
 inter_speed = 82.39
 home_pc = ["intel i7", 16, 82.39]
+print(home_pc)
