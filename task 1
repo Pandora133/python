@@ -23,7 +23,7 @@ age = 17
 average_grade = 4.7 
 favorite_movies = ["Достать ножи", "Властелин колец", "Интерстеллар"]
 personal_info = ("Пандора", "Каит20", average_grade)
-skills = {trategists: 10, luck: 6}
+skills = {"strategists": 10, "luck": 6}
 visited_countries = {"Испания", "Турция"}
 has_driver_license = False
 
