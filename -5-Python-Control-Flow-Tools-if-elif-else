@@ -19,3 +19,20 @@ elif sum < 5000 and sum > 1000:
     print("Cкидка 5%")
 elif sum > 5000:
     print("Cкидка 10%")
+
+#3
+
+num1 = int(input("Введите число а: "))
+num2 = int(input("Введите число b: "))
+print("Выберите операцию: \n[1] -\n[2] +\n[3] *\n[4] /")
+num = input("Введите номер вышего выбора: ")
+if num == "1":
+    print(num1 - num2)
+elif num == "2":
+    print(num1 + num2)
+elif num == "3":
+    print(num1 * num2)
+elif num == "4":
+    print(num1 / num2)
+else:
+    print("Неверная операция.")
