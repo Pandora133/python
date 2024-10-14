@@ -46,3 +46,12 @@ elif num %2 == 0 and num % 10 == 2:
     print(True)
 else:
     print(False)
+
+#5
+
+par = ("Пароль")
+pas = input("Введите пароль: ")
+if pas == par:
+    print("Доступ разрешен.")
+else:
+    print("Неверный пароль.")
