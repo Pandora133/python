@@ -36,3 +36,13 @@ elif num == "4":
     print(num1 / num2)
 else:
     print("Неверная операция.")
+
+#4
+
+num = int(input("Введите число: "))
+if num %2 == 0 and num % 10 == 6:
+    print(True)
+elif num %2 == 0 and num % 10 == 2:
+    print(True)
+else:
+    print(False)
