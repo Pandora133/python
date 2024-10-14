@@ -9,4 +9,13 @@ elif age <  65 and age > 18:
 elif age > 65:
     print("Вы пенсионер")
 
+#2
 
+sum = int(input("Стоимость покупки: "))
+
+if sum < 1000:
+    print("Cкидка не предоставляется")
+elif sum < 5000 and sum > 1000:
+    print("Cкидка 5%")
+elif sum > 5000:
+    print("Cкидка 10%")
