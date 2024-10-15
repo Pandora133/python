@@ -102,3 +102,27 @@ elif "ключ" not in inventory and "фонарь" in inventory:
     print("У вас нет ключа, вы не можете открыть дверь.")
 else:
     print("У вас нет ни ключа, ни фонаря, вы не можете пройти через дверь.")
+
+#10
+
+king = "Enemies are coming! Are the archers ready?"
+warrior = "For the Alliance!"
+magician = "The spell is ready."
+
+print(king)
+if "?" in king or "!" in king or "." in king:
+    print(True)
+else:
+    print(False)
+
+print(warrior)
+if "?" in warrior or "!" in warrior or "." in warrior:
+    print(True)
+else:
+    print(False)
+
+print(magician)
+if "?" in magician or "!" in magician or "." in magician:
+    print(True)
+else:
+    print(False)
