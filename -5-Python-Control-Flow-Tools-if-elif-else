@@ -90,3 +90,15 @@ elif level > 5 and health < 20:
     print("Ваше здоровье слишком низкое для выполнения миссии.")
 else:
     print("Некорректные данные.")
+
+#9
+
+inventory = ["яблоко", "шариковая ручка"]
+if "фонарь" in inventory and "ключ" in inventory:
+    print("Вы можете пройти через дверь.")
+elif "фонарь" not in inventory and "ключ" in inventory:
+    print("У вас нет фонаря, слишком темно, чтобы пройти.")
+elif "ключ" not in inventory and "фонарь" in inventory:
+    print("У вас нет ключа, вы не можете открыть дверь.")
+else:
+    print("У вас нет ни ключа, ни фонаря, вы не можете пройти через дверь.")
