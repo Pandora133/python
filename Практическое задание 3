@@ -49,3 +49,18 @@ elif num == "3":
      print("Площадь комнаты будет равна: ", s)
 else:
     print("Неверная операция.")
+
+ #5
+
+n = int(input("Введите колличество програмистов: "))
+prom = "программист"
+if n == 1:
+    print(n, prom)
+elif n > 1 and n < 5:
+    ista = "истa"
+    print(n, prom + ista)
+elif n >= 5:
+    istov = "истов"
+    print(n,prom + istov)
+else:
+    print("Неверное число программистов")
