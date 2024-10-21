@@ -68,8 +68,8 @@ else:
 #6
 
 bilet = input("Введите номер билета: ")
-per = bilet[0] + bilet[1] + bilet[2]
-pos = bilet[-1] + bilet[-2] + bilet[-3]
+per = int(bilet[0]) + int(bilet[1]) + int(bilet[2])
+pos = int(bilet[-1]) + int(bilet[-2]) + int(bilet[-3])
 if per == pos:
     print("Билет счастливый")
 else:
