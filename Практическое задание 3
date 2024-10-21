@@ -4,3 +4,14 @@ minyt = int(input("Введите минуты: "))
 print(minyt//60, minyt%60)
 
 #2
+a = 8
+b = 9
+h = int(input("Сколько поспала Аня: "))
+if a == h or b == h:
+    print("Это нормально")
+elif b < h:
+    print("Пересып")
+else:
+    print("Недосып")
+
+#3
