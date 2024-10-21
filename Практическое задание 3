@@ -1,0 +1,6 @@
+#1
+
+minyt = int(input("Введите минуты: "))
+print(minyt//60, minyt%60)
+
+#2
