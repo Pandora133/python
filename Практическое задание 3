@@ -64,3 +64,14 @@ elif n >= 5:
     print(n,prom + istov)
 else:
     print("Неверное число программистов")
+
+#6
+
+bilet = input("Введите номер билета: ")
+per = bilet[0] + bilet[1] + bilet[2]
+pos = bilet[-1] + bilet[-2] + bilet[-3]
+if per == pos:
+    print("Билет счастливый")
+else:
+    print("Билет обычный")
+
