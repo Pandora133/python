@@ -28,3 +28,11 @@ for i in shop:
     else:
         print("I don't need it.")
 
+#5
+
+tasks = ["Сдать проект (Важная)", "Сходить в магазин", "Позвонить врачу (Важная)", "Убраться в комнате", "Подготовить отчёт"]
+for index, tasks in enumerate(tasks, start=1):
+    if "Важная" in tasks:
+        print(f"{index}: ! {tasks}")
+    else:
+        print(f"{index}: {tasks}")
