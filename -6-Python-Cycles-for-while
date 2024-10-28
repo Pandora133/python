@@ -19,5 +19,12 @@ for i in stations:
     else:
         print(f"Поезд на станции: {i}")
 
+#4
 
+shop = ["Laptop", "Smartphone", "Watch", "Tablet", "Headphones"]
+for i in shop:
+    if i == "Laptop":
+        print("I'm buying this.")
+    else:
+        print("I don't need it.")
 
