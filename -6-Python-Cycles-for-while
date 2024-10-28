@@ -2,7 +2,7 @@
 
 names = ["Richard", "Igor", "Jonathan", "Alice", "Mary", "Bonnie"]
 for i in names:
-    print("Hello", i, "!")
+    print(f"Hello {i}!")
 
 #2
 
@@ -33,6 +33,13 @@ for i in shop:
 tasks = ["Сдать проект (Важная)", "Сходить в магазин", "Позвонить врачу (Важная)", "Убраться в комнате", "Подготовить отчёт"]
 for index, tasks in enumerate(tasks, start=1):
     if "Важная" in tasks:
-        print(f"{index}: ! {tasks}")
+        print(f"{index}!: {tasks}")
     else:
         print(f"{index}: {tasks}")
+
+#6
+
+nom = int(input("Введите кол-во чисел: "))
+for x in range(nom):
+    num = int(input("Введите сами числа: "))
+print("Сумма чисел: ", num)
