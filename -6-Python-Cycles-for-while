@@ -55,7 +55,7 @@ while count < 9:
 
 i = 0
 while i < 3:
-    num = input("Введите номер вышего выбора: ")
+    num = input("> ")
     if num == "w":
         print("Персонаж идёт вперёд")
     elif num == "a":
