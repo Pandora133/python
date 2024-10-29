@@ -50,3 +50,22 @@ count = -1
 while count < 9:
     count += 1
     print(count)
+
+#8
+
+i = 0
+while i < 3:
+    num = input("Введите номер вышего выбора: ")
+    if num == "w":
+        print("Персонаж идёт вперёд")
+    elif num == "a":
+        print("Персонаж идёт вперёд")
+    elif num == "s":
+        print("Персонаж идёт назад.")
+    elif num == "d":
+        print("Персонаж идёт вправо.")
+    elif num == "stop":
+        print("Программа завершена.")
+        break
+    else:
+        print("Неизвестная команда! Попробуйте снова.")
