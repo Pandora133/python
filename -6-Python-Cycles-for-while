@@ -43,3 +43,10 @@ nom = int(input("Введите кол-во чисел: "))
 for x in range(nom):
     num = int(input("Введите сами числа: "))
 print("Сумма чисел: ", num)
+
+#7
+
+count = -1
+while count < 9:
+    count += 1
+    print(count)
