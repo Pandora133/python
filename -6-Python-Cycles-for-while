@@ -40,9 +40,12 @@ for index, tasks in enumerate(tasks, start=1):
 #6
 
 nom = int(input("Введите кол-во чисел: "))
+i = 0
 for x in range(nom):
-    num = int(input("Введите сами числа: "))
-print("Сумма чисел: ", num)
+        num = int(input("Введите сами числа: "))
+        i += num
+print("Сумма чисел: ", i)
+
 
 #7
 
