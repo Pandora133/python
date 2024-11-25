@@ -32,6 +32,7 @@ switch_check(switch_3)
 #3.1
 
 def triangle(a, b, c):
+    print("Длина сторон треугольника:", a, b, c, "\nИнформация:")
     if a + b <= c or a + c <= b or c + b <= a:
         print("Некорректные стороны. Невозможно построить треугольник.")
     elif a != b and a != c and b != c:
@@ -45,6 +46,7 @@ def triangle(a, b, c):
 
 import math
 def triangle(a, b, c):
+    print("Длина сторон треугольника:", a, b, c, "\nИнформация:")
     if a + b <= c or a + c <= b or c + b <= a:
         print("Некорректные стороны. Невозможно построить треугольник.")
     elif a != b and a != c and b != c:
@@ -57,7 +59,6 @@ def triangle(a, b, c):
     s = p / 2
     area = math.sqrt(s * (s - a) * (s - b) * (s - c))
     print(f"Площадь: {int(s)}\nПериметр: {round(area, 2)}")
-
 
 #4
 
