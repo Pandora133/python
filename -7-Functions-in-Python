@@ -53,9 +53,10 @@ def triangle(a, b, c):
         print("Равнобедренный треугольник")
     elif a == b == c:
         print("Равносторонний треугольник")
-    p = (a + b + c) / 2
-    s = math.sqrt(p * (p - a) * (p - b) * (p - c))
-    print(f"Площадь равна: {s}")
+    p = (a + b + c)
+    s = p / 2
+    area = math.sqrt(s * (s - a) * (s - b) * (s - c))
+    print(f"Площадь: {int(s)}\nПериметр: {round(area, 2)}")
 
 
 #4
