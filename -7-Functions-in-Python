@@ -62,6 +62,10 @@ def triangle(a, b, c):
 
 #4
 
-
+def number_change(input_number, output_number):
+    if input_number == output_number:
+        print(0, input_number, output_number)
+    elif input_number > output_number:
+        g = input_number -= output_number
 
 
