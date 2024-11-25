@@ -29,7 +29,7 @@ switch_check(switch_2)
 switch_check(switch_3)
 
 
-#3
+#3.1
 
 def triangle(a, b, c):
     if a + b <= c or a + c <= b or c + b <= a:
