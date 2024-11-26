@@ -86,3 +86,16 @@ def number_change(input_number, output_number):
         print(u, i, output_number)
 
 
+#5
+
+player = 0
+def info_player():
+    print(f"Игрок пробежал {player} км.")
+
+def run_player(km):
+        global player
+        player += km / 2
+
+
+#6
+
