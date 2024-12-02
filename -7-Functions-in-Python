@@ -99,3 +99,40 @@ def run_player(km):
 
 #6
 
+import math
+def info_number(number_1: int, number_2: int):
+    """
+    Выводит информацию о координатах точки
+
+    Функция определяет:
+    - В какой четверти тригонометрической плоскости находится точка
+    - Длину вектора
+
+    Параметры:
+    number (int): Целое число.
+
+    Пример:
+     >> info_number(2, 6)
+    Координаты точки: 2, 6
+    Точка находится в 1 четверти
+    Вектор равен: 6.32
+
+     >> info_number(-2)
+    Ошибка. Число меньше или равно нулю.
+
+    """
+    if number_1 == 0 and number_2 == 0:
+        return "Ошибка"
+
+    if number_1 > 0 and number_2 > 0:
+        i = 1
+    elif number_1 < 0 and number_2 > 0:
+        i = 2
+    elif number_1 < 0 and number_2 < 0:
+        i = 3
+    else:
+        i = 4
+
+    v = math.sqrt(number_1 ** 2 + number_2 ** 2)
+
+    return f"Число: {number_1, number_2}\nТочка находится в {i} четверти\nВектор равен: {round(v, 2)}"
