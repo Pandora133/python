@@ -117,9 +117,8 @@ def info_number(number_1: int, number_2: int):
     Точка находится в 1 четверти
     Вектор равен: 6.32
 
-     >> info_number(-2)
-    Ошибка. Число меньше или равно нулю.
-
+     >> info_number(0, 0)
+    Ошибка
     """
     if number_1 == 0 and number_2 == 0:
         return "Ошибка"
