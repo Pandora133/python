@@ -48,3 +48,19 @@ if n > 9:
 else:
     for i in range(n+1):
         print(word_numb[i])
+
+
+#3
+
+bin_sy = ["11011111", "11011101", "11000111", "11011100", "11011110"]
+dec_sy = []
+for bin_num in bin_sy:
+    dec_sy.append(int(bin_num, 2))
+
+print(dec_sy)
+
+max_num = max(dec_sy)
+min_num = min(dec_sy)
+
+print(f"Минимальное число: {min_num}")
+print(f"Максимальное число: {max_num}")
