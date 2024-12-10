@@ -1,1 +1,21 @@
+#1
+
+#корень
+import math
+p = int(input("Введите число: "))
+print(math.sqrt(p))
+
+#синус и косинус
+from math import *
+i = int(input("Введите число: "))
+print(f"Синус равен: {sin(i)}")
+print(f"Косинус равен: {cos(i)}")
+
+#факториал
+from math import *
+i = int(input("Введите число: "))
+print(f"Факториал равен: {factorial(i)}")
+
+
+#2
 
