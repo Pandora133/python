@@ -1,0 +1,11 @@
+class Car:
+    def __init__(self, mark, color, bue):
+        self.mark = mark
+        self.color = color
+        self.bue = bue
+
+    def print_class(self):
+        print(f"Машина: {self.mark}. Цвет: {self.color}. Продается по цене: {self.bue} долларов")
+
+car1 = Car("Мерседес", "красный", 1000)
+car1.print_class()
