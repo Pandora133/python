@@ -1,1 +1,42 @@
+#1
 
+class Create_Personage:
+    def __init__(self, name: str, clas: str, hp: int, damage: int):
+        self.name = name
+        self.clas = clas
+        self.hp = hp
+        self.damage = damage
+
+    def print_info(self):
+        print(f"Имя: {self.name}\n"
+              f"Класс: {self.clas}\n"
+              f"Жизни: {self.hp}\n"
+              f"Урон: {self.damage}")
+
+    def go_on_a_trip(self):
+        print(f"{self.name} отправился в путешествие")
+
+    def go_back(self):
+        print(f"{self.name} возвращается назад")
+
+    def start_training(self):
+        self.hp += 30
+        self.damage += 10
+        print(f"{self.name} начал тренировку. Некоторое время он не будет доступен, однако станет сильнее!")
+
+    def start_the_battl(self):
+        print(f"{self.name} хочет начать сражаться!\n"
+              f"Его показатели: Жизни: {self.hp} и урон: {self.damage}")
+
+
+pers1 = Create_Personage("Серега", "Хиллер", 100, 10)
+pers1.print_info()
+print()
+pers1.go_on_a_trip()
+pers1.go_back()
+print()
+pers1.start_training()
+print()
+pers1.print_info()
+print()
+pers1.start_the_battl()
