@@ -79,11 +79,17 @@ class Create_Schet:
 
     def popolnenie(self):
         p = int(input("Вы хотите пополнить счет \n Введите сумму: "))
-        self.balance += p
+        if p < 0:
+            print("Некотектная сумма")
+        else:
+            self.balance += p
 
     def snatie(self):
         s = int(input("Вы хотите снять средства со счета \n Введите сумму: "))
-        self.balance -= s
+        if s > self.balance:
+            print("Некоректная сумма")
+        else:
+            self.balance -= s
 
     def ostatok(self):
         print(f"Средств на вашем счете: {self.balance}{self.vaiyu}")
