@@ -92,9 +92,9 @@ class Create_Schet:
             self.balance -= s
 
     def ostatok(self):
-        print(f"Средств на вашем счете: {self.balance} {self.vaiyu}")
+        print(f"Средств на счете {self.name}: {self.balance} {self.vaiyu}")
 
-schet1 = Create_Schet("Иванов Иван Иваныч", 1000, "USD")
+schet1 = Create_Schet("Иванов Иван", 1000, "USD")
 schet1.ostatok()
 print()
 schet1.popolnenie()
