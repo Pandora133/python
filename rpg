@@ -1,0 +1,56 @@
+import random
+class Personage:
+    def __init__(self, name: str, haelth: float, money: int, lvl: int, weapon: str, dmg: float):
+        self.name = name
+        self.haelth = haelth
+        self.money = money
+        self.lvl = lvl
+        self.weapon = weapon
+        self.dmg = dmg
+        self.xp = 0
+        self.inventory = []
+
+    def info_pers(self):
+        print(f"-------{self.name}--------\n"
+              f"Здоровье: {self.haelth}\n"
+              f"Деньги: {self.money}\n"
+              f"Уровень: {self.lvl}\n"
+              f"Оружие: {self.weapon if len(self.weapon) != 0 else "бузоружный"}\n"
+              f"Урон: {self.dmg}\n"
+              f"Инвентарь:\n - {"\n - ".join(map(str, self.inventory)) if self.inventory else "пусто"}\n"
+              f"-------{"-" * len(self.name)}--------")
+
+main_pers = Personage("Серега", 100.0, 5, 1, "", 1)
+main_pers.info_pers()
+print()
+pers2 = Personage("Альберт", 200.0, 100, 10, "Длинный меч", 10)
+pers2.inventory = ["Легендарная палка", "Святая палка", "Демоническая палка"]
+pers2.info_pers()
+
+monster_name = ["Орк", "Скелет", "Гиганская крыса", "Мимик", "Фея", "Исчадье"]
+def randdom_name():
+    name = random.choice(monster_name)
+    lvl = random.randint(1, 5)
+    if lvl == 1:
+        dmg = random.randint(1, 3)
+    elif lvl == 2:
+        dmg = random.randint(3, 6)
+    elif lvl == 3:
+        dmg = random.randint(6, 9)
+    elif lvl == 5:
+        dmg = random.randint(9, 12)
+    elif lvl == 5:
+        dmg = random.randint(12, 15)
+    hp = random.randint(10, 200)
+    return {
+        "name": name,
+        "lvl": lvl,
+        "dmg": dmg,
+        "hp": hp
+    }
+
+monster = randdom_name()
+print(f"Враг перед вами: {monster["name"]}\n"
+      f"Его уровень: {monster["lvl"]}\n"
+      f"Eго урон: {monster["dmg"]}\n"
+      f"Eго здоровье: {monster["hp"]}")
