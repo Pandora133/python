@@ -1,5 +1,4 @@
 #1
-
 import os
 import subprocess
 
@@ -17,7 +16,6 @@ class GameLauncher:
             print(f"Ошибка: игра {self.gname} не запущена. Путь {self.gpath} не найден")
 
 #2
-
 class File:
     def __init__(self, filename, size):
         self.filename = filename
