@@ -1,2 +1,18 @@
 #1
 
+import os
+import subprocess
+
+class GameLauncher:
+    def __init__(self, gname, gpath):
+        self.gname = gname
+        self.gpath = gpath
+
+    def run(self):
+        if os.path.exists(self.gpath):
+            subprocess.Popen([self.gpath], shell= True)
+            print(f"Игра {self.gname} успешно запущена с пути: {self.gpath}")
+
+        else:
+            print(f"Ошибка: игра {self.gname} не запущена. Путь {self.gpath} не найден")
+
